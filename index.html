@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Public holidays, Nepal</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="input-section">
+        <label>Year</label>
+        <input type="number" placeholder="between(2015-2021)" id="getYear" />
+      </div>
+      <div class="brief">
+        <p>
+          Search in year between 2015 to 2021 to view the public holiday from
+          that existing year
+        </p>
+        <p>note: shows public holiday accoding to nepali calender</p>
+      </div>
+      <div class="current-dateTime">
+        <div class="dateHere">
+          <p>Date</p>
+          <span class="year"></span>&nbsp;- <span class="month"></span>&nbsp;-
+          <span class="day"></span>,
+          <span class="showDay"></span>
+        </div>
+        <div class="timeHere">
+          <p>Time</p>
+          <span class="hrs"></span>&nbsp;: <span class="min"></span>&nbsp;:
+          <span class="sec"></span>
+          <span class="meridian"></span>
+        </div>
+      </div>
+      <div class="holidays-chart">
+        <div class="header">
+          All Public Holidays of Year&nbsp;<span id="showYear">2019</span>
+        </div>
+        <div class="datas-header">
+          <p>Date</p>
+          <p>Occasion</p>
+          <p>Type</p>
+        </div>
+        <div class="datas"></div>
+        <div class="lackInternet">
+          <h2>No internet</h2>
+          <p>Try:</p>
+          <ul>
+            <li>Checking the network cables, modem, and router</li>
+            <li>Reconnecting to Wi-Fi</li>
+            <li>Running Windows Network Diagnostics</li>
+          </ul>
+          <p class="lightish">ERR_INTERNET_DISCONNECTED</p>
+        </div>
+      </div>
+      <footer>
+        <p>For more go to</p>
+        <a href="https://calendarific.com">create your own calender!!</a>
+      </footer>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
